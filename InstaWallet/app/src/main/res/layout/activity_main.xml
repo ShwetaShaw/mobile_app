@@ -1,18 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/walletimage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/ic_walletimage"
+    android:gravity="bottom"
+    android:orientation="vertical"
     tools:context="com.example.megha.instawallet.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:alpha="0.9"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_normal"
+            android:gravity="left"
+            android:hint="Username"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_normal"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:textColorHint="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_roundrect_green"
+            android:text="Login"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
